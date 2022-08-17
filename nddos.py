@@ -3,14 +3,12 @@ import socket
 import threading
 import os, sys
 import time
-  os.system("clear")
-  print("\033[1;34;40m=>Build By Kingbob<=")
-  time.sleep(1)
-  print("\033[1;34;40m=>YT KINGBOB<=")
-  time.sleep(3)
-  os.system("clear")
-  print('''\033[1;36;40m
-                                                    
+print("\033[1;34;40m=>Build By Kingbob<=")
+time.sleep(1)
+print("\033[1;34;40m=>YT KINGBOB<=")
+time.sleep(3)
+os.system("clear")
+print('''\033[1;36;40m
 ------------------------------------------------------------------                                                                  
 @@@  @@@  @@@  @@@  @@@   @@@@@@@@  @@@@@@@    @@@@@@   @@@@@@@   
 @@@  @@@  @@@  @@@@ @@@  @@@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  

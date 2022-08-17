@@ -3,8 +3,6 @@ import socket
 import threading
 import os, sys
 import time
-  print("[âœ“] Kingbob is handsome")
-  time.sleep(2)
   os.system("clear")
   print("\033[1;34;40m=>Build By Kingbob<=")
   time.sleep(1)

@@ -3,6 +3,8 @@ import socket
 import threading
 import os, sys
 import time
+from termcolor import colored
+
 print("\033[1;34;40m=>Build By Kingbob<=")
 time.sleep(1)
 print("\033[1;34;40m=>YT KINGBOB<=")

